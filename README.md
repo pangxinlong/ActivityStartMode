@@ -1,1 +1,2 @@
 # ActivityStartMode
+学习和了解acitity的几种启动方式
