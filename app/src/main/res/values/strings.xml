@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActivityStartMode</string>
+    <string name="standard">描述: 每次启动都会创建新的实例</string>
+    <string name="singleTop">描述: 如果创建intent时栈顶已经有要创建Activity的实例,则将Intent发送给该实例，否则会创建新的实例</string>
+    <string name="singleTask">描述: 只创建一个实例当Intent到来，当需要创建singleTask模式Activity时，系统会检查栈里面是否已经有该Activity的实例。如果有直接将Intent发送给它，并且原在此Activity栈中上面的Activity将会被关闭。</string>
+    <string name="singleInstance">描述: 在singleInstance模式下，加载该Activity时如果没有实例化，它会在创建新的Task后，实例化入栈，如果已经存在，则直接调用onNewIntent，该Activity的Task中不允许启动其他的Activity，任何从该Activity启动的其他Activity都将被放到其他Task中，先检查是否有在应用的Task，没有的话就创建。</string>
+</resources>

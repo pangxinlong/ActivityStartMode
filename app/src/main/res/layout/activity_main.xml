@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.activitystartmode.activitystartmode.MainActivity">
+
+    <TextView
+            android:text="Hello World!"
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_describe"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:id="@+id/tv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" "
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12sp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+        <Button
+                android:id="@+id/bt_standard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight='1'
+                android:text="standard"
+                android:textSize="12sp"/>
+
+        <Button
+                android:id="@+id/bt_singleTop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight='1'
+                android:text="singleTop"
+                android:textSize="12sp"/>
+
+        <Button
+                android:id="@+id/bt_singleTask"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight='1'
+                android:text="SingleTask"
+                android:textSize="12sp"/>
+
+        <Button
+                android:id="@+id/bt_singleInstance"
+                android:layout_width="0dp"
+                android:layout_weight='1'
+                android:layout_height="match_parent"
+                android:text="SingleInstance"
+                android:textSize="12sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
