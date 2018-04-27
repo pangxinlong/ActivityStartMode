@@ -1,5 +1,6 @@
 package com.example.activitystartmode.activitystartmode;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -42,9 +43,22 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.e(getLocalClassName(),"onCreate");
         ButterKnife.bind(this);
         init();
         setListener();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.e(getLocalClassName(),"onNewIntent");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.e(getLocalClassName(),"onDestroy");
     }
 
     private void init() {
